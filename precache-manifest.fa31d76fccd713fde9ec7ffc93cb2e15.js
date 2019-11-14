@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf58e247208d9030a0bb1b179611d167",
+    "revision": "c2024fbc61996f66ebdbb769f0c378b8",
     "url": "/disease-classifier/index.html"
   },
   {
-    "revision": "c494806b0f087fc1fea0",
-    "url": "/disease-classifier/static/css/main.6d632ecf.chunk.css"
+    "revision": "c634ae0dccf7111b379c",
+    "url": "/disease-classifier/static/css/main.3029f955.chunk.css"
   },
   {
     "revision": "b481bda22e7a6aab9ac8",
     "url": "/disease-classifier/static/js/2.4b8e3b33.chunk.js"
   },
   {
-    "revision": "c494806b0f087fc1fea0",
-    "url": "/disease-classifier/static/js/main.0203a0df.chunk.js"
+    "revision": "c634ae0dccf7111b379c",
+    "url": "/disease-classifier/static/js/main.9237d933.chunk.js"
   },
   {
     "revision": "2c8216b967c4bbc94ad5",

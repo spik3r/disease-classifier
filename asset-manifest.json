@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/disease-classifier/static/css/main.6d632ecf.chunk.css",
-    "main.js": "/disease-classifier/static/js/main.0203a0df.chunk.js",
-    "main.js.map": "/disease-classifier/static/js/main.0203a0df.chunk.js.map",
+    "main.css": "/disease-classifier/static/css/main.3029f955.chunk.css",
+    "main.js": "/disease-classifier/static/js/main.9237d933.chunk.js",
+    "main.js.map": "/disease-classifier/static/js/main.9237d933.chunk.js.map",
     "runtime-main.js": "/disease-classifier/static/js/runtime-main.82c45eb7.js",
     "runtime-main.js.map": "/disease-classifier/static/js/runtime-main.82c45eb7.js.map",
     "static/js/2.4b8e3b33.chunk.js": "/disease-classifier/static/js/2.4b8e3b33.chunk.js",
     "static/js/2.4b8e3b33.chunk.js.map": "/disease-classifier/static/js/2.4b8e3b33.chunk.js.map",
     "index.html": "/disease-classifier/index.html",
-    "precache-manifest.31edd9d645acca85459c76ffccd1c32f.js": "/disease-classifier/precache-manifest.31edd9d645acca85459c76ffccd1c32f.js",
+    "precache-manifest.fa31d76fccd713fde9ec7ffc93cb2e15.js": "/disease-classifier/precache-manifest.fa31d76fccd713fde9ec7ffc93cb2e15.js",
     "service-worker.js": "/disease-classifier/service-worker.js",
-    "static/css/main.6d632ecf.chunk.css.map": "/disease-classifier/static/css/main.6d632ecf.chunk.css.map",
+    "static/css/main.3029f955.chunk.css.map": "/disease-classifier/static/css/main.3029f955.chunk.css.map",
     "static/media/logo.svg": "/disease-classifier/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.82c45eb7.js",
     "static/js/2.4b8e3b33.chunk.js",
-    "static/css/main.6d632ecf.chunk.css",
-    "static/js/main.0203a0df.chunk.js"
+    "static/css/main.3029f955.chunk.css",
+    "static/js/main.9237d933.chunk.js"
   ]
 }
