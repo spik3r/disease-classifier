@@ -33,8 +33,6 @@ class HypertensionComponent extends Component {
     handleClick = (e) => {
         const newClassification = getClassification(this.state.sysBp, this.state.diaBp);
         const classificationString = getClassificationString(newClassification);
-        console.log('newClassification', newClassification);
-        console.log('classificationString', classificationString);
         this.setState({
             classificationResults: classify(this.state.sysBp, this.state.diaBp, this.state.date),
             classification: classificationString
@@ -51,7 +49,6 @@ class HypertensionComponent extends Component {
     };
 
     getClassificationHighlight = (classification) => {
-        console.log('classificatoin', classification);
         if (classification === "Stage 1") {
             return "blue";
         }
@@ -71,7 +68,7 @@ class HypertensionComponent extends Component {
 
         return <div className="hypertension-results-container">
             <div className="hypertension-input">
-                <label>Date:</label><input className="date-input" value={this.state.classificationResults.date || this.state.date} readonly/>
+                <label>Date:</label><input className="date-input" value={this.state.classificationResults.date || this.state.date} readOnly/>
             </div>
             <div className="hypertension-input">
                 <label>Systolic Pressure:</label><input className="sys-bp-input" value={this.state.sysBp}
@@ -82,14 +79,12 @@ class HypertensionComponent extends Component {
                                                          onChange={this.handleDiaBpChange}/>
             </div>
             <div className="hypertension-input">
-                <label>Classification:</label><input readonly
-                                                     className={`classification-input ${this.getClassificationHighlight(this.state.classificationResults.classification)}`}
-                                                     value={this.state.classificationResults.classification}/>
+                <label>Classification:</label><p className={`classification-input ${this.getClassificationHighlight(this.state.classificationResults.classification)}`}>{this.state.classificationResults.classification}</p>
             </div>
             <div className="hypertension-input">
-                <textarea className="summaray-text-area" value={prettyPrint(this.state.classificationResults)}/>
+                <textarea className="summaray-text-area" readOnly value={prettyPrint(this.state.classificationResults)}/>
             </div>
-            <button className="hypertension-classify-button" readonly onClick={this.handleClick}>Classify</button>
+            <button className="hypertension-classify-button" onClick={this.handleClick}>Classify</button>
         </div>;
     }
 

@@ -88,6 +88,8 @@
 
 .hypertension-classify-button {
   margin: 8px;
+  border-radius: 8px;
+  border: 1px solid black;
 }
 
 .red {

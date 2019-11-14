@@ -6,15 +6,13 @@ const getClassification = (sysBp, diaBp) => {
     if (sysBp >= 180 && diaBp >= 120) {
         return 3;
     }
-    // If SysBP is between 160 (inclusive) and 180 (exclusive) OR DiaBP is between 100 (inclusive) and
-    // 110 (exclusive)
+    // If SysBP is between 160 (inclusive) and 180 (exclusive) OR DiaBP is between 100 (inclusive) and 110 (exclusive)
     // Classification: “Stage 2”
     if ((sysBp >= 160 && sysBp < 180) || (diaBp >= 100 && diaBp < 110)) {
         return 2;
     }
 
-    // If SysBP is between 140 (inclusive) and 160 (exclusive) OR DiaBP is between 90 (inclusive) and 100
-    // (exclusive)
+    // If SysBP is between 140 (inclusive) and 160 (exclusive) OR DiaBP is between 90 (inclusive) and 100 (exclusive)
     // Classification: “Stage 1”
     if ((sysBp >= 140 && sysBp < 160) || (diaBp >= 90 && diaBp < 100)) {
         return 1;
