@@ -24,6 +24,7 @@
 /*NAV*/
 
 .header-container {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,12 +32,12 @@
 }
 
 .header-nav {
-  width: 40%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   display: flex;
 }
 
 .nav-item {
+  /*width: 50%;*/
   margin: 0 15px;
   list-style: none;
   font-size: 24px;
@@ -52,9 +53,11 @@
 /*HYPERTENSION*/
 
 .hypertension-results-container {
+  position: relative;
+  top: 130px;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   margin: 16px auto;
   align-items: center;
   background-color: lightgrey;
@@ -102,4 +105,16 @@
 .unknown {
   background-color: pink;
   border: 1px solid yellow;
+}
+
+
+@media only screen and (min-width: 400px) {
+  .header-container {
+    position: unset;
+  }
+
+  .hypertension-results-container {
+    /*position: unset;*/
+    top: 8px;
+  }
 }
