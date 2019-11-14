@@ -71,7 +71,7 @@ class HypertensionComponent extends Component {
 
         return <div className="hypertension-results-container">
             <div className="hypertension-input">
-                <label>Date:</label><input className="date-input" value={this.state.date} readonly/>
+                <label>Date:</label><input className="date-input" value={this.state.classificationResults.date || this.state.date} readonly/>
             </div>
             <div className="hypertension-input">
                 <label>Systolic Pressure:</label><input className="sys-bp-input" value={this.state.sysBp}

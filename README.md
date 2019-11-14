@@ -1,3 +1,10 @@
+# Disease Classifier
+See live demo here [here](https://spik3r.github.io/disease-classifier/#).
+
+To Build run: `yarn build`
+To Start locally run: `yarn start`
+TO run through all unit tests run: `yarn test`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

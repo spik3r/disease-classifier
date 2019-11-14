@@ -1,8 +1,10 @@
 {
   "name": "disease-classifier",
   "version": "0.1.0",
+  "homepage": "https://spik3r.github.io/disease-classifier/#",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "moment": "^2.24.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -10,6 +12,7 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
+    "deploy": "yarn build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
