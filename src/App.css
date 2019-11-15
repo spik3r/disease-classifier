@@ -43,11 +43,11 @@
   font-size: 24px;
   padding: 8px;
   margin: 8px;
-  border: 1px solid black;
 }
 
 .nav-item:hover {
-  background-color: lightblue;
+  background-color: darkgrey;
+  border: 1px solid black;
 }
 
 /*HYPERTENSION*/

@@ -19,7 +19,7 @@ const getClassification = (sysBp, diaBp) => {
     }
 
     //Todo: Not listed but after some searching this should either be Stage 2 or Unclassified
-    if ((sysBp < 140) && (diaBp >= 110 )) {
+    if ((diaBp >= 110 )) {
         return -1
     }
 

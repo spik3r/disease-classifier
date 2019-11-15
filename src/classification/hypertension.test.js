@@ -75,6 +75,14 @@ describe("hypertension tests", () => {
         it("should handle undefined input gracefully", () => {
             expect(getClassification(undefined, undefined)).toBe(0);
         });
+
+        it("should handle unclassifiable input (things that are missed by the rules above)", () => {
+            expect(getClassification(120, 110)).toBe(-1);
+        });
+
+        it("should handle unclassifiable input (things that are between the rules above)", () => {
+            expect(getClassification(180, 110)).toBe(-1);
+        });
     });
 
     describe("getClassificationString tests", () => {
@@ -92,6 +100,10 @@ describe("hypertension tests", () => {
 
         it("should return correct classification string for classification 0", () => {
             expect(getClassificationString(0)).toEqual("No Hypertension");
+        });
+
+        it("should return unclassified for classification -1", () => {
+            expect(getClassificationString(-1)).toEqual("Unclassified: Possibly Stage 2 please manually verify");
         });
     });
 
