@@ -52,7 +52,8 @@
 
 /*HYPERTENSION*/
 
-.hypertension-results-container {
+.hypertension-results-container,
+.kidney-results-container {
   position: relative;
   top: 130px;
   display: flex;
@@ -66,7 +67,8 @@
 }
 
 
-.hypertension-input {
+.hypertension-input,
+.kidney-input{
   width: 90%;
   margin: 8px;
   display: flex;
@@ -74,6 +76,7 @@
 }
 
 .classification-input,
+.classification,
 .date-input,
 .sys-bp-input,
 .dia-bp-input {
@@ -86,18 +89,38 @@
   line-height: 16px;
 }
 
+.kidney-text-area {
+  width: 100%;
+  height: 300px;
+  line-height: 16px;
+}
+
 .hypertension-classify-button {
   margin: 8px;
   border-radius: 8px;
   border: 1px solid black;
 }
 
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orange-red {
+  background-color: orangered;
+}
+
 .red {
   background-color: lightcoral;
 }
 
-.yellow {
-  background-color: yellow;
+.black {
+  background-color: black;
+  color: red;
 }
 
 .blue {
@@ -115,7 +138,8 @@
     position: unset;
   }
 
-  .hypertension-results-container {
+  .hypertension-results-container,
+  .kidney-results-container {
     /*position: unset;*/
     top: 8px;
   }
