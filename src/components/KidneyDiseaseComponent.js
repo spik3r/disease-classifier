@@ -1,20 +1,7 @@
 import React, {Component} from 'react';
 import {getExtendedEgfrData} from "../data/eGFRData";
 import {getCriticalData, getPercentageChange, getClassification} from "../classification/kidneyDisease";
-
-const prettyPrint = (data) => {
-    const jsonData = JSON.stringify(data);
-
-    return jsonData
-        .replace(/\[/g, '')
-        .replace(/\]/g, '')
-        .replace(/,/g, '\n')
-        .replace(/:/g, ': ')
-        .replace(/"/g, '')
-        .replace(/{/g, '')
-        .replace(/}}/g, '\n- - - - - - - - - - - - - - - - - - \n')
-        .replace(/}/g, '\n');
-};
+import {getClassificationHighlight, prettyPrint} from "./uiHelpers";
 
 class KidneyDiseaseComponent extends Component {
 
@@ -32,7 +19,6 @@ class KidneyDiseaseComponent extends Component {
             drops: classificationResults.drops,
             previous: classificationResults.drops[classificationResults.drops.length - 1].initialReading
         }
-        console.log('previous', this.state.previous)
     }
 
     handleEgfrChange = (e) => {
@@ -50,40 +36,13 @@ class KidneyDiseaseComponent extends Component {
 
 
     handleClick = (e) => {
-        console.log('handleCLick');
         const classification = getClassification(this.state.eGFR);
         const percentageChange = getPercentageChange(this.state.previous.eGFR, this.state.eGFR);
-
-        console.log('classification', classification);
-        console.log('percentageChange', percentageChange);
 
         this.setState({
             percentageChange: percentageChange,
             classification: classification,
-
         })
-    };
-
-    getClassificationHighlight = (classification) => {
-        if (classification === "Mildly Decreased") {
-            return "yellow";
-        }
-        if (classification === "Mild to Moderate") {
-            return "orange";
-        }
-        if (classification === "Moderate to Severe") {
-            return "orange-red";
-        }
-        if (classification === "Severely Decreased") {
-            return "red";
-        }
-        if (classification === "Kidney Failure") {
-            return "black";
-        }
-        if (classification.includes("Unclassified")) {
-            return "unknown";
-        }
-        return "";
     };
 
     render() {
@@ -97,7 +56,6 @@ class KidneyDiseaseComponent extends Component {
                     </div>
                     <div className="kidney-input">
                         <label>eGFR:</label><input className="classification" value={this.state.eGFR} onChange={this.handleEgfrChange}/>
-                        {/*<label className="classification">{this.state.eGFR}</label>*/}
                     </div>
                     <div className="kidney-input">
                         <label>percentageChange:</label><label
@@ -105,7 +63,7 @@ class KidneyDiseaseComponent extends Component {
                     </div>
                     <div className="kidney-input">
                         <label>classification:</label><label
-                        className={`classification ${this.getClassificationHighlight(this.state.classification)}`}>{this.state.classification}</label>
+                        className={`classification ${getClassificationHighlight(this.state.classification)}`}>{this.state.classification}</label>
                     </div>
 
                     <hr className="hr"/>
@@ -125,9 +83,6 @@ class KidneyDiseaseComponent extends Component {
                     <button className="kidney-classify-button" onClick={this.handleClick}>Classify</button>
                 </>
             </div>
-            {/*<div className="kidney-results-inner-container">*/}
-            {/*    */}
-            {/*</div>*/}
             <div className="kidney-results-inner-container">
                 <h2>All Drops</h2>
                 <textarea className="kidney-text-area" readOnly value={prettyPrint(this.state.drops)}/>

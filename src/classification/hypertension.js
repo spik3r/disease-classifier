@@ -19,7 +19,7 @@ const getClassification = (sysBp, diaBp) => {
     }
 
     //Todo: Not listed but after some searching this should either be Stage 2 or Unclassified
-    if ((diaBp >= 110 )) {
+    if ((diaBp >= 110)) {
         return -1
     }
 
@@ -52,7 +52,7 @@ const classify = (sysBp, diaBp, date) => {
         diaBp: diaBp,
         classification: getClassificationString(classification)
     }
-}
+};
 
 const classifyLatest = (classificationData) => {
     const latest = getLast(classificationData);

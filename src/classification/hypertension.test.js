@@ -1,4 +1,4 @@
-import {getClassification, classifyLatest, getClassificationString, classify} from "./hypertension";
+import {classify, classifyLatest, getClassification, getClassificationString} from "./hypertension";
 import getSampleData from "../data/hypertensionData";
 import {getToday} from "./dates";
 

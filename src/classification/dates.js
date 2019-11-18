@@ -10,6 +10,6 @@ const getLast = (data) => {
 };
 
 const getToday = () => {
-    return new moment().toISOString().substr(0,10).replace(/-/g, '/');
-}
+    return new moment().toISOString().substr(0, 10).replace(/-/g, '/');
+};
 export {getLast, getToday}

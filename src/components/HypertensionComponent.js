@@ -2,17 +2,7 @@ import React, {Component} from 'react';
 import {getClassification, classifyLatest, getClassificationString, classify} from "../classification/hypertension";
 import getSampleData from "../data/hypertensionData";
 import {getToday} from "../classification/dates";
-
-const prettyPrint = (data) => {
-    const jsonData = JSON.stringify(data);
-
-    return jsonData
-        .replace(/,/g, '\n')
-        .replace(/:/g, ': ')
-        .replace(/"/g, '')
-        .replace(/{/g, '')
-        .replace(/}/g, '');
-};
+import {prettyPrint, getClassificationHighlight} from "./uiHelpers";
 
 class HypertensionComponent extends Component {
 
@@ -39,29 +29,12 @@ class HypertensionComponent extends Component {
         })
     };
 
-
     handleSysBpChange = (e) => {
         this.setState({sysBp: e.target.value});
     };
 
     handleDiaBpChange = (e) => {
         this.setState({diaBp: e.target.value});
-    };
-
-    getClassificationHighlight = (classification) => {
-        if (classification === "Stage 1") {
-            return "blue";
-        }
-        if (classification === "Stage 2") {
-            return "yellow";
-        }
-        if (classification === "Stage 3") {
-            return "red";
-        }
-        if (classification.includes("Unclassified")) {
-            return "unknown";
-        }
-        return "";
     };
 
     render() {
@@ -79,7 +52,7 @@ class HypertensionComponent extends Component {
                                                          onChange={this.handleDiaBpChange}/>
             </div>
             <div className="hypertension-input">
-                <label>Classification:</label><p className={`classification-input ${this.getClassificationHighlight(this.state.classificationResults.classification)}`}>{this.state.classificationResults.classification}</p>
+                <label>Classification:</label><p className={`classification-input ${getClassificationHighlight(this.state.classificationResults.classification)}`}>{this.state.classificationResults.classification}</p>
             </div>
             <div className="hypertension-input">
                 <textarea className="summaray-text-area" readOnly value={prettyPrint(this.state.classificationResults)}/>

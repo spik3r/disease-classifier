@@ -174,7 +174,7 @@ describe("kidneyDisease tests", () => {
             expect(getPercentageChanges(sortByDate(getEgfrData()))).toEqual(
                 [0, -7.14]);
         });
-    })
+    });
 
     describe("getDataWithPercentageChanged tests", () => {
         it("should return correct eGFR, date and percentage change", () => {
@@ -195,7 +195,7 @@ describe("kidneyDisease tests", () => {
                 ]);
         });
 
-    })
+    });
     describe("getDataWithCriticalPercentageChanged tests", () => {
         it("should return correct empty array when no changes greater than threshold", () => {
             expect(getDataWithCriticalPercentageChanged(getEgfrData())).toEqual([]);
@@ -229,7 +229,7 @@ describe("kidneyDisease tests", () => {
                 ]);
         });
 
-    })
+    });
 
     describe("getCriticalData tests", () => {
         it("should return correct eGFR, date and percentage change", () => {
@@ -246,27 +246,27 @@ describe("kidneyDisease tests", () => {
 
         it("should return correct eGFR, date and percentage change for extended Data", () => {
             expect(getCriticalData(getExtendedEgfrData())).toEqual(
-                    {
-                        eGFR: 45,
-                        atDate: '2018/10/31',
-                        percentageChange: -25,
-                        classification: "Mild to Moderate",
-                        drops: [
-                            {
-                                initialReading: {eGFR: 110, atDate: '2018/10/20', percentageChange: 0},
-                                latestReading: {eGFR: 80, atDate: '2018/10/21', percentageChange: -27.27}
-                            },
-                            {
-                                initialReading: {eGFR: 80, atDate: '2018/10/21', percentageChange: -27.27},
-                                latestReading: {eGFR: 60, atDate: '2018/10/25', percentageChange: -25}
-                            },
-                            {
-                                initialReading: {eGFR: 60, atDate: '2018/10/25', percentageChange: -25},
-                                latestReading: {eGFR: 45, atDate: '2018/10/31', percentageChange: -25}
-                            },
-                        ]
-                    }
-        );
+                {
+                    eGFR: 45,
+                    atDate: '2018/10/31',
+                    percentageChange: -25,
+                    classification: "Mild to Moderate",
+                    drops: [
+                        {
+                            initialReading: {eGFR: 110, atDate: '2018/10/20', percentageChange: 0},
+                            latestReading: {eGFR: 80, atDate: '2018/10/21', percentageChange: -27.27}
+                        },
+                        {
+                            initialReading: {eGFR: 80, atDate: '2018/10/21', percentageChange: -27.27},
+                            latestReading: {eGFR: 60, atDate: '2018/10/25', percentageChange: -25}
+                        },
+                        {
+                            initialReading: {eGFR: 60, atDate: '2018/10/25', percentageChange: -25},
+                            latestReading: {eGFR: 45, atDate: '2018/10/31', percentageChange: -25}
+                        },
+                    ]
+                }
+            );
         });
 
     })
