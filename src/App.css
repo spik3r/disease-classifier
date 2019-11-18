@@ -59,11 +59,19 @@
     margin: 8px;
 }
 
+.home-container {
+    width: 100%;
+    min-width: 375px;
+    display: flex;
+    top: 130px;
+    position: relative;
+    flex-direction: column;
+    margin: 0 32px;
+}
 .img-nav {
-    justify-content: center;
     display: flex;
     margin: auto;
-    width: 640px;
+    width: 80%;
     background-color: lightgrey;
     border: 1px solid black;
     border-radius: 8px;
@@ -111,7 +119,7 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 16px auto;
+    margin: 0 64px;
     align-items: center;
     background-color: lightgrey;
     border: 1px solid black;
@@ -198,8 +206,8 @@
     top: 130px;
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin: 16px auto;
+    width: 92%;
+    margin: 0 32px;
     /*align-items: center;*/
     background-color: lightgrey;
     border: 1px solid black;
@@ -244,5 +252,9 @@
     .kidney-results-container {
         flex-direction: row;
         top: 8px;
+    }
+
+    .home-container {
+        top: 8px
     }
 }
