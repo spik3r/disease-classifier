@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/disease-classifier/static/css/main.d62289aa.chunk.css",
+    "main.css": "/disease-classifier/static/css/main.4fb335c8.chunk.css",
     "main.js": "/disease-classifier/static/js/main.3a5f4c43.chunk.js",
     "main.js.map": "/disease-classifier/static/js/main.3a5f4c43.chunk.js.map",
     "runtime-main.js": "/disease-classifier/static/js/runtime-main.82c45eb7.js",
@@ -8,9 +8,9 @@
     "static/js/2.7902029e.chunk.js": "/disease-classifier/static/js/2.7902029e.chunk.js",
     "static/js/2.7902029e.chunk.js.map": "/disease-classifier/static/js/2.7902029e.chunk.js.map",
     "index.html": "/disease-classifier/index.html",
-    "precache-manifest.5841819d5e2f4ca9474591ce03030cad.js": "/disease-classifier/precache-manifest.5841819d5e2f4ca9474591ce03030cad.js",
+    "precache-manifest.e7782feccc436f24d3c2eccd39bcae21.js": "/disease-classifier/precache-manifest.e7782feccc436f24d3c2eccd39bcae21.js",
     "service-worker.js": "/disease-classifier/service-worker.js",
-    "static/css/main.d62289aa.chunk.css.map": "/disease-classifier/static/css/main.d62289aa.chunk.css.map",
+    "static/css/main.4fb335c8.chunk.css.map": "/disease-classifier/static/css/main.4fb335c8.chunk.css.map",
     "static/media/heart.png": "/disease-classifier/static/media/heart.300dcbaa.png",
     "static/media/kidney.png": "/disease-classifier/static/media/kidney.294b181b.png",
     "static/media/logo.svg": "/disease-classifier/static/media/logo.25bf045c.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.82c45eb7.js",
     "static/js/2.7902029e.chunk.js",
-    "static/css/main.d62289aa.chunk.css",
+    "static/css/main.4fb335c8.chunk.css",
     "static/js/main.3a5f4c43.chunk.js"
   ]
 }
