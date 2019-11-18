@@ -1,76 +1,129 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+    height: 40vmin;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #09d3ac;
+    color: #09d3ac;
 }
 
 /*NAV*/
+.header-heading {
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 8px;
+    padding: 8px;
+}
+
+.header-heading:hover {
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 8px;
+}
 
 .header-container {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lightgrey;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
 }
 
 .header-nav {
-  justify-content: space-between;
-  display: flex;
+    justify-content: space-between;
+    display: flex;
 }
 
 .nav-item {
-  /*width: 50%;*/
-  margin: 0 15px;
-  list-style: none;
-  font-size: 24px;
-  padding: 8px;
-  margin: 8px;
+    /*width: 50%;*/
+    margin: 0 15px;
+    list-style: none;
+    font-size: 24px;
+    padding: 8px;
+    margin: 8px;
+}
+
+.img-nav {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 640px;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.nav-img-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-img {
+    background-color: white;
+    margin: 16px;
+    width: 60%;
+    height: auto;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+.nav-img:hover {
+    background-color: lightblue;
+}
+
+.home-heading {
+    text-align: center;
+    text-decoration: underline;
 }
 
 .nav-item:hover {
-  background-color: darkgrey;
-  border: 1px solid black;
+    background-color: darkgrey;
+    border: 1px solid black;
 }
 
 /*HYPERTENSION*/
 
 .hypertension-results-container {
-  position: relative;
-  top: 130px;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 16px auto;
-  align-items: center;
-  background-color: lightgrey;
-  border: 1px solid black;
-  border-radius: 10px;
+    position: relative;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 16px auto;
+    align-items: center;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 
 .hypertension-input {
-  width: 90%;
-  margin: 8px;
-  display: flex;
-  justify-content: space-between;
+    width: 90%;
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .classification-input,
@@ -78,118 +131,118 @@
 .date-input,
 .sys-bp-input,
 .dia-bp-input {
-  width: 50%;
+    width: 50%;
 }
 
 .summaray-text-area {
-  width: 100%;
-  height: 100px;
-  line-height: 16px;
+    width: 100%;
+    height: 100px;
+    line-height: 16px;
 }
 
 .kidney-text-area {
-  width: 100%;
-  height: 300px;
-  line-height: 16px;
+    width: 100%;
+    height: 300px;
+    line-height: 16px;
 }
 
 .hypertension-classify-button {
-  margin: 8px;
-  border-radius: 8px;
-  border: 1px solid black;
+    margin: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
 }
 
 
 .yellow {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 .orange {
-  background-color: orange;
+    background-color: orange;
 }
 
 .orange-red {
-  background-color: orangered;
+    background-color: orangered;
 }
 
 .red {
-  background-color: lightcoral;
+    background-color: lightcoral;
 }
 
 .black {
-  background-color: black;
-  color: red;
+    background-color: black;
+    color: red;
 }
 
 .blue {
-  background-color: lightblue;
+    background-color: lightblue;
 }
 
 .unknown {
-  background-color: pink;
-  border: 1px solid yellow;
+    background-color: pink;
+    border: 1px solid yellow;
 }
 
 
 .kidney-input {
-  width: 90%;
-  margin: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: space-between;
+    width: 90%;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .kidney-results-container {
-  position: relative;
-  top: 130px;
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  margin: 16px auto;
-  /*align-items: center;*/
-  background-color: lightgrey;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 8px;
+    position: relative;
+    top: 130px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 16px auto;
+    /*align-items: center;*/
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
 }
 
 .kidney-results-inner-container {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  flex-direction: column;
-  flex-basis: 50%;
-  margin: 8px auto;
-  border: 1px solid grey;
-  border-radius: 8px;
-  padding: 8px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 8px auto;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 .hr {
-  width: 100%;
-  height: 2px;
+    width: 100%;
+    height: 2px;
 }
 
 .kidney-classify-button {
-  margin: 8px;
-  border-radius: 8px;
-  border: 1px solid black;
-  align-self: flex-end;
-  /*width: 20%;*/
+    margin: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    align-self: flex-end;
+    /*width: 20%;*/
 }
 
 @media only screen and (min-width: 400px) {
-  .header-container {
-    position: unset;
-  }
+    .header-container {
+        position: unset;
+    }
 
-  .hypertension-results-container {
-    top: 8px;
-  }
+    .hypertension-results-container {
+        top: 8px;
+    }
 
-  .kidney-results-container {
-    flex-direction: row;
-    top: 8px;
-  }
+    .kidney-results-container {
+        flex-direction: row;
+        top: 8px;
+    }
 }
