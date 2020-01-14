@@ -1,9 +1,15 @@
 # Disease Classifier
 See live demo here [here](https://spik3r.github.io/disease-classifier/#).
 
-To Build run: `yarn build`
-To Start locally run: `yarn start`
-TO run through all unit tests run: `yarn test`
+- To Build run: `yarn build`
+- To Start locally run: `yarn start`
+- To run through all unit tests run: `yarn test`
+- To run the mutationtests run: `stryker run`
+
+requires [Stryker](https://stryker-mutator.io/stryker/quickstart) cli installed locally:
+```
+npm install -g stryker-cli
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
